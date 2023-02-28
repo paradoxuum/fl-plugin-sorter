@@ -1,0 +1,18 @@
+[package]
+name = "fl-plugin-sorter"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = { version = "4.1.1", features = ["derive"] }
+color-eyre = "0.6.2"
+dialoguer = { version = "0.10.3", features = ["fuzzy-select"] }
+dirs = "4.0.0"
+owo-colors = "3.5.0"
+serde = { version = "1.0.152", features = ["derive"] }
+toml = "0.5.10"
+
+[profile.dev.package.backtrace]
+opt-level = 3
