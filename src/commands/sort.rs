@@ -17,7 +17,7 @@ struct SortResult {
 }
 
 #[derive(Debug, Parser)]
-/// Sorts plugins defined by plugin group files into the plugin database
+/// Sorts plugins defined by plugin groups into the plugin database
 pub struct SortSubcommand {}
 
 impl RunnableCommand for SortSubcommand {

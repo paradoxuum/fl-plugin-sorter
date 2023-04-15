@@ -8,7 +8,7 @@ use crate::config::{Config, PluginDatabase, PluginGroup, PluginGroupType};
 
 use super::RunnableCommand;
 
-/// Removes plugins sorted from a plugin group
+/// Removes any folders and plugin files created when sorting
 #[derive(Debug, Parser)]
 pub struct UnsortSubcommand {}
 

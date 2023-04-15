@@ -6,6 +6,7 @@ use crate::config::{Config, PluginGroup, PluginGroupType};
 
 use super::RunnableCommand;
 
+/// Creates a new plugin group
 #[derive(Debug, Parser)]
 pub struct NewSubcommand {
     /// List of plugins the plugin group should contain
@@ -20,6 +21,7 @@ pub struct NewSubcommand {
     #[arg(long = "type", short = 't')]
     group_type: PluginGroupType,
 
+    /// Name of the plugin group file
     #[arg(long, short)]
     file_name: Option<String>,
 }

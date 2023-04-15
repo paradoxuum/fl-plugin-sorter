@@ -9,6 +9,7 @@ use crate::config::{Config, PluginGroup};
 
 use super::RunnableCommand;
 
+/// List all plugins defined within a plugin group
 #[derive(Debug, Parser)]
 pub struct ListSubcommand {}
 
